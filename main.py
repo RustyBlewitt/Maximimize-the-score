@@ -212,9 +212,9 @@ for t in range(T):                      # For each test case...
         scotts_q.enqueue(b)                 # Pass a reference of that object to Scott's queue
         rustys_q.enqueue(b)                 # Pass a reference of that object to Rusty's queue
 
-    toss = f.readline()                 # Input 3/3 : Result of the toin coss
+    toss = f.readline()                 # Input 3/3 : Result of the coin toss
 
-    # Current player is Rusty if toin coss is tails, otherwise Scott
+    # Current player is Rusty if coin toss is tails, otherwise Scott
     player = rustys_q if 'TAILS' in toss else scotts_q
 
     for turn in range(1, ball_count+1): # For each turn (each unique ball)
